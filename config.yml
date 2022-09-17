@@ -1,4 +1,4 @@
-token: "lip_r7VNy6DLjfsJVpHUWG3E"    # Lichess OAuth2 Token.
+token: "lip_j47mmYNwdJzvXamyVTOg"    # Lichess OAuth2 Token.
 url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
@@ -8,7 +8,7 @@ engine:                      # Engine settings.
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
-    enabled: true             # Activate polyglot book.
+    enabled: false             # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
         - engines/books/Goi5.1.bin
@@ -39,7 +39,7 @@ engine:                      # Engine settings.
       min_depth: 20          # Only for move_quality: "best".
       contribute: true
     lichess_cloud_analysis:
-      enabled: true
+      enabled: false
       min_time: 20
       move_quality: "best"   # One of "good", "best".
       max_score_difference: 50 # Only for move_quality: "good". The maximum score difference (in cp) between the best move and the other moves.
